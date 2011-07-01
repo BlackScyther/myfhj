@@ -32,10 +32,10 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 140;
 	
 	[scrollView setContentSize:CGSizeMake(320.0f,750.0f)];
     
-    lblData.text = @"Persönliche Daten";
-    lblFirstName.text = @"Vorname";
-    lblLastName.text = @"Nachname";
-    lblProgramme.text = @"Strudiengang";
+    lblData.text = NSLocalizedString(@"settings.personalData", @"data");
+    lblFirstName.text = NSLocalizedString(@"settings.firstname", @"First Name");
+    lblLastName.text = NSLocalizedString(@"settings.lastname", @"Last Name");
+    lblProgramme.text = NSLocalizedString(@"settings.programme", @"Programme");
     
     NSString *firstname = [[NSUserDefaults standardUserDefaults] stringForKey:@"userFirstname"];
     if (firstname == nil) {
@@ -53,19 +53,19 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 140;
     
     NSString *location = [[NSUserDefaults standardUserDefaults] stringForKey:@"userLocation"];
     if (location == nil) {
-        location = @"Standort";
+        location = NSLocalizedString(@"settings.location", @"Location");
     }
     [btnLocation setTitle:location forState:UIControlStateNormal];
     
     NSString *pCode = [[NSUserDefaults standardUserDefaults] stringForKey:@"userProgrammeCode"];
     if (pCode == nil) {
-        pCode = @"Kürzel";
+        pCode = NSLocalizedString(@"settings.programmeCode", @"Code");
     }
     [btnCode setTitle:pCode forState:UIControlStateNormal];
     
     NSString *year = [[NSUserDefaults standardUserDefaults] stringForKey:@"userYear"];
     if (year == nil) {
-        year = @"Jahrgang";
+        year = NSLocalizedString(@"settings.year", @"Year");
     }
     [btnYear setTitle:year forState:UIControlStateNormal];
 }
@@ -150,21 +150,21 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 140;
 {
     NSArray *locations = [NSArray arrayWithObjects:@"Graz", @"Kapfenberg", @"Bad Gleichenberg", nil];
  
-    [self showActionSheetWithTitle:@"Standort" buttons:locations sheet:1];
+    [self showActionSheetWithTitle:NSLocalizedString(@"settings.location", @"Location") buttons:locations sheet:1];
 }
 
 - (IBAction) setProgrammeCode:(id)sender 
 {
     NSArray *codes = [NSArray arrayWithObjects:@"ITM", @"SWD", nil];
     
-    [self showActionSheetWithTitle:@"Kürzel" buttons:codes sheet:2];
+    [self showActionSheetWithTitle:NSLocalizedString(@"settings.programmeCode", @"Code") buttons:codes sheet:2];
 }
 
 - (IBAction) setYear:(id)sender 
 {
     NSArray *years = [NSArray arrayWithObjects:@"2008", @"2007", @"2006", @"2005", @"2004", nil];
     
-    [self showActionSheetWithTitle:@"Jahrgang" buttons:years sheet:3];
+    [self showActionSheetWithTitle:NSLocalizedString(@"settings.year", @"Year") buttons:years sheet:3];
 }
 
 - (void) showActionSheetWithTitle:(NSString*)title buttons:(NSArray*)content sheet:(NSUInteger)tag
