@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		CE0EE22F13AC848E00B085D4 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE0EE22E13AC848E00B085D4 /* Entitlements.plist */; };
 		CE0EE23113AC955500B085D4 /* Entitlements-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE0EE23013AC955500B085D4 /* Entitlements-Debug.plist */; };
+		CE1F648B13BE166C00ECA3E5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE1F648213BE166C00ECA3E5 /* Localizable.strings */; };
+		CE1F648C13BE166C00ECA3E5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1F648613BE166C00ECA3E5 /* Default.png */; };
+		CE1F648D13BE166C00ECA3E5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1F648713BE166C00ECA3E5 /* icon.png */; };
+		CE1F648E13BE166C00ECA3E5 /* onebit_03.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1F648813BE166C00ECA3E5 /* onebit_03.png */; };
+		CE1F648F13BE166C00ECA3E5 /* onebit_15.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1F648913BE166C00ECA3E5 /* onebit_15.png */; };
+		CE1F649013BE166C00ECA3E5 /* onebit_21.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1F648A13BE166C00ECA3E5 /* onebit_21.png */; };
 		CE29BB1313B90A9F00F52365 /* TestSettingscontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29BB1113B90A6B00F52365 /* TestSettingscontroller.m */; };
 		CE29BB1413B90ABB00F52365 /* TestSettingscontroller.h in Resources */ = {isa = PBXBuildFile; fileRef = CE29BB1013B90A6B00F52365 /* TestSettingscontroller.h */; };
 		CE5D88AD13B737A200151685 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5D88AE13B737A200151685 /* main.m */; };
@@ -59,6 +65,13 @@
 /* Begin PBXFileReference section */
 		CE0EE22E13AC848E00B085D4 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		CE0EE23013AC955500B085D4 /* Entitlements-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Entitlements-Debug.plist"; sourceTree = "<group>"; };
+		CE1F648313BE166C00ECA3E5 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE1F648413BE166C00ECA3E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE1F648613BE166C00ECA3E5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CE1F648713BE166C00ECA3E5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		CE1F648813BE166C00ECA3E5 /* onebit_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onebit_03.png; sourceTree = "<group>"; };
+		CE1F648913BE166C00ECA3E5 /* onebit_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onebit_15.png; sourceTree = "<group>"; };
+		CE1F648A13BE166C00ECA3E5 /* onebit_21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onebit_21.png; sourceTree = "<group>"; };
 		CE29BB1013B90A6B00F52365 /* TestSettingscontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestSettingscontroller.h; path = Seetings/TestSettingscontroller.h; sourceTree = "<group>"; };
 		CE29BB1113B90A6B00F52365 /* TestSettingscontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestSettingscontroller.m; path = Seetings/TestSettingscontroller.m; sourceTree = "<group>"; };
 		CE5D88AE13B737A200151685 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -144,6 +157,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE1F648113BE166C00ECA3E5 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				CE1F648213BE166C00ECA3E5 /* Localizable.strings */,
+				CE1F648513BE166C00ECA3E5 /* img */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		CE1F648513BE166C00ECA3E5 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				CE1F648613BE166C00ECA3E5 /* Default.png */,
+				CE1F648713BE166C00ECA3E5 /* icon.png */,
+				CE1F648813BE166C00ECA3E5 /* onebit_03.png */,
+				CE1F648913BE166C00ECA3E5 /* onebit_15.png */,
+				CE1F648A13BE166C00ECA3E5 /* onebit_21.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
 		CE29BB0E13B90A0F00F52365 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +200,7 @@
 		CE962ADD138ED3C8000A83ED = {
 			isa = PBXGroup;
 			children = (
+				CE1F648113BE166C00ECA3E5 /* Ressources */,
 				CE962B25138ED3D8000A83ED /* ThirdParty */,
 				CE962AF2138ED3C9000A83ED /* myFHJ */,
 				CE962B12138ED3C9000A83ED /* myFHJTests */,
@@ -472,6 +507,12 @@
 				CE914BF513B2337C0034AA21 /* InfoView.xib in Resources */,
 				CEB1C97113B65B9300BEE3D7 /* AgendaView.xib in Resources */,
 				CEB1C97B13B67BAF00BEE3D7 /* SettingsView.xib in Resources */,
+				CE1F648B13BE166C00ECA3E5 /* Localizable.strings in Resources */,
+				CE1F648C13BE166C00ECA3E5 /* Default.png in Resources */,
+				CE1F648D13BE166C00ECA3E5 /* icon.png in Resources */,
+				CE1F648E13BE166C00ECA3E5 /* onebit_03.png in Resources */,
+				CE1F648F13BE166C00ECA3E5 /* onebit_15.png in Resources */,
+				CE1F649013BE166C00ECA3E5 /* onebit_21.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +588,18 @@
 			targetProxy = CE962B10138ED3C9000A83ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE1F648213BE166C00ECA3E5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE1F648313BE166C00ECA3E5 /* de */,
+				CE1F648413BE166C00ECA3E5 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CE962B1D138ED3C9000A83ED /* Debug */ = {
