@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Root</key>
+	<dict>
+		<key>AEE</key>
+		<string></string>
+		<key>AIM</key>
+		<string></string>
+		<key>AMD</key>
+		<string></string>
+		<key>APM</key>
+		<string></string>
+		<key>ASE</key>
+		<string></string>
+		<key>AUD</key>
+		<string></string>
+		<key>BBM</key>
+		<string></string>
+		<key>BBW</key>
+		<string></string>
+		<key>BIO</key>
+		<string></string>
+		<key>BMI</key>
+		<string></string>
+		<key>BVS</key>
+		<string></string>
+		<key>BVW</key>
+		<string>Bank- und Versicherungsgesellschaft</string>
+		<key>DAE</key>
+		<string></string>
+		<key>DIO</key>
+		<string></string>
+		<key>EHT</key>
+		<string></string>
+		<key>ERG</key>
+		<string></string>
+		<key>ETM</key>
+		<string></string>
+		<key>EVU</key>
+		<string></string>
+		<key>FZT</key>
+		<string></string>
+		<key>GBP</key>
+		<string></string>
+		<key>GMT</key>
+		<string></string>
+		<key>GTM</key>
+		<string></string>
+		<key>HCE</key>
+		<string></string>
+		<key>IDB</key>
+		<string></string>
+		<key>IDE</key>
+		<string></string>
+		<key>IEL</key>
+		<string></string>
+		<key>IMA</key>
+		<string></string>
+		<key>IND</key>
+		<string></string>
+		<key>IRM</key>
+		<string></string>
+		<key>ISM</key>
+		<string></string>
+		<key>ISW</key>
+		<string></string>
+		<key>ITM</key>
+		<string></string>
+		<key>IWB</key>
+		<string></string>
+		<key>IWI</key>
+		<string>Industrialwirtschaft / Industrial Management</string>
+		<key>JPR</key>
+		<string>Journalismus und Public Relations (PR)</string>
+		<key>JUK</key>
+		<string></string>
+		<key>LAV</key>
+		<string></string>
+		<key>LOG</key>
+		<string></string>
+		<key>MEM</key>
+		<string>Business in Emerging Markets</string>
+		<key>MET</key>
+		<string></string>
+		<key>MID</key>
+		<string></string>
+		<key>MIG</key>
+		<string>Management internationaler Geschäftsprozesse</string>
+		<key>MIM</key>
+		<string>International Management</string>
+		<key>NUT</key>
+		<string></string>
+		<key>OG</key>
+		<string></string>
+		<key>PTH</key>
+		<string></string>
+		<key>PTO</key>
+		<string></string>
+		<key>PYB</key>
+		<string></string>
+		<key>PYG</key>
+		<string></string>
+		<key>R2S</key>
+		<string></string>
+		<key>RAD</key>
+		<string></string>
+		<key>SAG</key>
+		<string></string>
+		<key>SAM</key>
+		<string></string>
+		<key>SBG</key>
+		<string></string>
+		<key>SBK</key>
+		<string></string>
+		<key>SBL</key>
+		<string></string>
+		<key>SBS</key>
+		<string></string>
+		<key>SGA</key>
+		<string></string>
+		<key>SOA</key>
+		<string></string>
+		<key>SWD</key>
+		<string>Software Design</string>
+		<key>WSA</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>
