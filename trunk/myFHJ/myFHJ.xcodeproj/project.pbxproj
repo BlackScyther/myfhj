@@ -11,10 +11,8 @@
 		CE0EE23113AC955500B085D4 /* Entitlements-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE0EE23013AC955500B085D4 /* Entitlements-Debug.plist */; };
 		CE29BB1313B90A9F00F52365 /* TestSettingscontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29BB1113B90A6B00F52365 /* TestSettingscontroller.m */; };
 		CE29BB1413B90ABB00F52365 /* TestSettingscontroller.h in Resources */ = {isa = PBXBuildFile; fileRef = CE29BB1013B90A6B00F52365 /* TestSettingscontroller.h */; };
-		CE5D88A413B7377A00151685 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE5D88A613B7377A00151685 /* Localizable.strings */; };
 		CE5D88AD13B737A200151685 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5D88AE13B737A200151685 /* main.m */; };
 		CE5D88B013B738C300151685 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5D88B113B738C300151685 /* SettingsController.m */; };
-		CE5D88B413B7394800151685 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE5D88B213B7394800151685 /* Localizable.strings */; };
 		CE914BF213B232F20034AA21 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE914BF013B232F20034AA21 /* InfoViewController.m */; };
 		CE914BF513B2337C0034AA21 /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE914BF413B2337C0034AA21 /* InfoView.xib */; };
 		CE962AED138ED3C9000A83ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE962AEC138ED3C9000A83ED /* UIKit.framework */; };
@@ -37,8 +35,6 @@
 		CE962B4E138ED6F8000A83ED /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE962B3D138ED6F8000A83ED /* CXMLNode_PrivateExtensions.m */; };
 		CE962B4F138ED6F8000A83ED /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE962B3F138ED6F8000A83ED /* CXMLNode_XPathExtensions.m */; };
 		CE962B50138ED6F8000A83ED /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE962B42138ED6F8000A83ED /* CTidy.m */; };
-		CE962B9B138ED9F9000A83ED /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CE962B95138ED9F9000A83ED /* Default.png */; };
-		CE962B9D138ED9F9000A83ED /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE962B97138ED9F9000A83ED /* icon.png */; };
 		CEB1C96D13B6596F00BEE3D7 /* AgendaController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB1C96B13B6596E00BEE3D7 /* AgendaController.m */; };
 		CEB1C97113B65B9300BEE3D7 /* AgendaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB1C97013B65B9300BEE3D7 /* AgendaView.xib */; };
 		CEB1C97B13B67BAF00BEE3D7 /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB1C97A13B67BAF00BEE3D7 /* SettingsView.xib */; };
@@ -48,9 +44,6 @@
 		CEB74B3D1392D1DD000CF223 /* FeedTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB74B3A1392D1DD000CF223 /* FeedTableController.m */; };
 		CEB74B3E1392D1DD000CF223 /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB74B3B1392D1DD000CF223 /* FeedView.xib */; };
 		CEE527471399060D00B5765A /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE527451399060D00B5765A /* WebViewController.m */; };
-		CEE5274C13990C3B00B5765A /* onebit_03.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE5274913990C3B00B5765A /* onebit_03.png */; };
-		CEE5274D13990C3B00B5765A /* onebit_15.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE5274A13990C3B00B5765A /* onebit_15.png */; };
-		CEE5274E13990C3B00B5765A /* onebit_21.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE5274B13990C3B00B5765A /* onebit_21.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,11 +61,8 @@
 		CE0EE23013AC955500B085D4 /* Entitlements-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Entitlements-Debug.plist"; sourceTree = "<group>"; };
 		CE29BB1013B90A6B00F52365 /* TestSettingscontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestSettingscontroller.h; path = Seetings/TestSettingscontroller.h; sourceTree = "<group>"; };
 		CE29BB1113B90A6B00F52365 /* TestSettingscontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestSettingscontroller.m; path = Seetings/TestSettingscontroller.m; sourceTree = "<group>"; };
-		CE5D88A513B7377A00151685 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CE5D88AE13B737A200151685 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE5D88AF13B737B700151685 /* de */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CE5D88B113B738C300151685 /* SettingsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SettingsController.m; path = UI/Settings/SettingsController.m; sourceTree = "<group>"; };
-		CE5D88B313B7394800151685 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Ressources/de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CE914BEF13B232F20034AA21 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoViewController.h; path = UI/Info/InfoViewController.h; sourceTree = "<group>"; };
 		CE914BF013B232F20034AA21 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoViewController.m; path = UI/Info/InfoViewController.m; sourceTree = "<group>"; };
 		CE914BF413B2337C0034AA21 /* InfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InfoView.xib; path = UI/Info/InfoView.xib; sourceTree = "<group>"; };
@@ -114,8 +104,6 @@
 		CE962B41138ED6F8000A83ED /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
 		CE962B42138ED6F8000A83ED /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
 		CE962B43138ED6F8000A83ED /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
-		CE962B95138ED9F9000A83ED /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		CE962B97138ED9F9000A83ED /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		CEB1C96A13B6596E00BEE3D7 /* AgendaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AgendaController.h; path = UI/Web/Agenda/AgendaController.h; sourceTree = "<group>"; };
 		CEB1C96B13B6596E00BEE3D7 /* AgendaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AgendaController.m; path = UI/Web/Agenda/AgendaController.m; sourceTree = "<group>"; };
 		CEB1C97013B65B9300BEE3D7 /* AgendaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AgendaView.xib; path = UI/Web/Agenda/AgendaView.xib; sourceTree = "<group>"; };
@@ -129,9 +117,6 @@
 		CEB74B3B1392D1DD000CF223 /* FeedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedView.xib; path = UI/Feedreader/FeedView.xib; sourceTree = "<group>"; };
 		CEE527441399060D00B5765A /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = UI/Web/WebViewController.h; sourceTree = "<group>"; };
 		CEE527451399060D00B5765A /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = UI/Web/WebViewController.m; sourceTree = "<group>"; };
-		CEE5274913990C3B00B5765A /* onebit_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onebit_03.png; sourceTree = "<group>"; };
-		CEE5274A13990C3B00B5765A /* onebit_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onebit_15.png; sourceTree = "<group>"; };
-		CEE5274B13990C3B00B5765A /* onebit_21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onebit_21.png; sourceTree = "<group>"; };
 		CEE5279C1399193D00B5765A /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsController.h; path = UI/Settings/SettingsController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -212,7 +197,6 @@
 			isa = PBXGroup;
 			children = (
 				CE962BA0138EDA06000A83ED /* Classes */,
-				CE962B92138ED9F9000A83ED /* Ressources */,
 				CE962AF3138ED3C9000A83ED /* Supporting Files */,
 			);
 			path = myFHJ;
@@ -305,28 +289,6 @@
 				CE962B42138ED6F8000A83ED /* CTidy.m */,
 			);
 			path = Tidy;
-			sourceTree = "<group>";
-		};
-		CE962B92138ED9F9000A83ED /* Ressources */ = {
-			isa = PBXGroup;
-			children = (
-				CE5D88B213B7394800151685 /* Localizable.strings */,
-				CE962B93138ED9F9000A83ED /* img */,
-				CE5D88A613B7377A00151685 /* Localizable.strings */,
-			);
-			path = Ressources;
-			sourceTree = SOURCE_ROOT;
-		};
-		CE962B93138ED9F9000A83ED /* img */ = {
-			isa = PBXGroup;
-			children = (
-				CEE5274913990C3B00B5765A /* onebit_03.png */,
-				CEE5274A13990C3B00B5765A /* onebit_15.png */,
-				CEE5274B13990C3B00B5765A /* onebit_21.png */,
-				CE962B95138ED9F9000A83ED /* Default.png */,
-				CE962B97138ED9F9000A83ED /* icon.png */,
-			);
-			path = img;
 			sourceTree = "<group>";
 		};
 		CE962BA0138EDA06000A83ED /* Classes */ = {
@@ -502,21 +464,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5D88B413B7394800151685 /* Localizable.strings in Resources */,
-				CE962B9B138ED9F9000A83ED /* Default.png in Resources */,
-				CE962B9D138ED9F9000A83ED /* icon.png in Resources */,
 				CEB74B1813916539000CF223 /* RootViewController.xib in Resources */,
 				CEB74B1A1391654E000CF223 /* FHJWindow.xib in Resources */,
 				CEB74B3E1392D1DD000CF223 /* FeedView.xib in Resources */,
-				CEE5274C13990C3B00B5765A /* onebit_03.png in Resources */,
-				CEE5274D13990C3B00B5765A /* onebit_15.png in Resources */,
-				CEE5274E13990C3B00B5765A /* onebit_21.png in Resources */,
 				CE0EE22F13AC848E00B085D4 /* Entitlements.plist in Resources */,
 				CE0EE23113AC955500B085D4 /* Entitlements-Debug.plist in Resources */,
 				CE914BF513B2337C0034AA21 /* InfoView.xib in Resources */,
 				CEB1C97113B65B9300BEE3D7 /* AgendaView.xib in Resources */,
 				CEB1C97B13B67BAF00BEE3D7 /* SettingsView.xib in Resources */,
-				CE5D88A413B7377A00151685 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,27 +547,6 @@
 			targetProxy = CE962B10138ED3C9000A83ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CE5D88A613B7377A00151685 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE5D88A513B7377A00151685 /* en */,
-				CE5D88AF13B737B700151685 /* de */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		CE5D88B213B7394800151685 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE5D88B313B7394800151685 /* de */,
-			);
-			name = Localizable.strings;
-			path = ..;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CE962B1D138ED3C9000A83ED /* Debug */ = {
