@@ -27,7 +27,7 @@
     
     NSLog(@"Current Locale: %@", [[NSLocale currentLocale] localeIdentifier]);
     NSLog(@"Current language: %@", currentLanguage);
-    NSLog(@"Welcome Text: %@", NSLocalizedString(@"WelcomeKey", @""));
+    NSLog(@"Welcome Text: %@", NSLocalizedString(@"WelcomeKey", @"comment"));
     
     [self.window makeKeyAndVisible];
     [self registerDefaults];
