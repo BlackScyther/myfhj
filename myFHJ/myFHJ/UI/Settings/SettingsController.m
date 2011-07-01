@@ -23,7 +23,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 140;
 	if (self != nil) {
         
 	}
-	return self;
+	return self; 
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -57,7 +57,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 140;
     }
     [btnLocation setTitle:location forState:UIControlStateNormal];
     
-    NSString *pCode = [[NSUserDefaults standardUserDefaults] stringForKey:@"userfirstProgrammeCode"];
+    NSString *pCode = [[NSUserDefaults standardUserDefaults] stringForKey:@"userProgrammeCode"];
     if (pCode == nil) {
         pCode = @"Kürzel";
     }
