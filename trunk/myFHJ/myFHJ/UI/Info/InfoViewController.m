@@ -40,7 +40,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [_scrollView setBackgroundColor:[UIColor clearColor]];
+    [_textView setBackgroundColor:[UIColor clearColor]];
+    
+    NSString *infoPath = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"txt"];
+    NSError *error = nil;
+    
+    NSString *info = [NSString stringWithContentsOfFile:infoPath encoding:NSUTF8StringEncoding error:&error]; 
+    
+    if (error != nil) {
+        NSLog(@"Error, could not read Infor: %@", [error description]);
+    } else {
+        _textView.text = info;
+    }
 }
 
 - (void)viewDidUnload

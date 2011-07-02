@@ -11,7 +11,7 @@
 
 @interface InfoViewController : UIViewController {
  
-    IBOutlet UIScrollView *_scrollView;
+    IBOutlet UITextView *_textView;
 }
 
 @end
