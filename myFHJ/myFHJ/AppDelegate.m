@@ -21,13 +21,13 @@
     // Add the navigation controller's view to the window and display.
     self.window.rootViewController = self.navigationController;
     
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSArray *languages = [defaults objectForKey:@"AppleLanguages"];
-    NSString *currentLanguage = [languages objectAtIndex:0];
-    
-    NSLog(@"Current Locale: %@", [[NSLocale currentLocale] localeIdentifier]);
-    NSLog(@"Current language: %@", currentLanguage);
-    NSLog(@"Welcome Text: %@", NSLocalizedString(@"WelcomeKey", @"comment"));
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    NSArray *languages = [defaults objectForKey:@"AppleLanguages"];
+//    NSString *currentLanguage = [languages objectAtIndex:0];
+//    
+//    NSLog(@"Current Locale: %@", [[NSLocale currentLocale] localeIdentifier]);
+//    NSLog(@"Current language: %@", currentLanguage);
+//    NSLog(@"Welcome Text: %@", NSLocalizedString(@"WelcomeKey", @"comment"));
     
     [self.window makeKeyAndVisible];
     [self registerDefaults];

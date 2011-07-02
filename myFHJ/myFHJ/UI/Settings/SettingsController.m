@@ -155,7 +155,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 140;
 
 - (IBAction) setProgrammeCode:(id)sender 
 {
-    NSArray *codes = [NSArray arrayWithObjects:@"ITM", @"SWD", nil];
+    NSArray *codes = [NSArray arrayWithObjects:@"ASE", @"IRM", @"ITM", @"SWD", nil];
     
     [self showActionSheetWithTitle:NSLocalizedString(@"settings.programmeCode", @"Code") buttons:codes sheet:2];
 }

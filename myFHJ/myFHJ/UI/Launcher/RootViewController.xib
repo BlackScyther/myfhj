@@ -2,9 +2,9 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">784</int>
-		<string key="IBDocument.SystemVersion">10J4138</string>
+		<string key="IBDocument.SystemVersion">10K540</string>
 		<string key="IBDocument.InterfaceBuilderVersion">1306</string>
-		<string key="IBDocument.AppKitVersion">1038.35</string>
+		<string key="IBDocument.AppKitVersion">1038.36</string>
 		<string key="IBDocument.HIToolboxVersion">461.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -13,11 +13,11 @@
 		<object class="NSArray" key="IBDocument.IntegratedClassDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<string>IBUIView</string>
-			<string>IBUIImageView</string>
+			<string>IBUIBarButtonItem</string>
 			<string>IBUILabel</string>
 			<string>IBUIToolbar</string>
 			<string>IBProxyObject</string>
-			<string>IBUIBarButtonItem</string>
+			<string>IBUIImageView</string>
 			<string>IBUIButton</string>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
@@ -49,7 +49,7 @@
 					<object class="IBUIButton" id="407194795">
 						<reference key="NSNextResponder" ref="353605238"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{30, 20}, {60, 60}}</string>
+						<string key="NSFrame">{{30, 95}, {60, 60}}</string>
 						<reference key="NSSuperview" ref="353605238"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="696707236"/>
@@ -82,7 +82,7 @@
 					<object class="IBUILabel" id="174451113">
 						<reference key="NSNextResponder" ref="353605238"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 88}, {80, 21}}</string>
+						<string key="NSFrame">{{20, 163}, {80, 21}}</string>
 						<reference key="NSSuperview" ref="353605238"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="780865601"/>
@@ -135,7 +135,7 @@
 						<string key="NSFrame">{{20, 362}, {80, 21}}</string>
 						<reference key="NSSuperview" ref="353605238"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="92493364"/>
+						<reference key="NSNextKeyView" ref="798903450"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -152,7 +152,7 @@
 					<object class="IBUIButton" id="696707236">
 						<reference key="NSNextResponder" ref="353605238"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{130, 20}, {60, 60}}</string>
+						<string key="NSFrame">{{130, 95}, {60, 60}}</string>
 						<reference key="NSSuperview" ref="353605238"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="795301596"/>
@@ -172,7 +172,7 @@
 					<object class="IBUILabel" id="780865601">
 						<reference key="NSNextResponder" ref="353605238"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{120, 88}, {80, 21}}</string>
+						<string key="NSFrame">{{120, 163}, {80, 21}}</string>
 						<reference key="NSSuperview" ref="353605238"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="430680236"/>
@@ -192,7 +192,7 @@
 					<object class="IBUIButton" id="795301596">
 						<reference key="NSNextResponder" ref="353605238"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{229, 20}, {60, 60}}</string>
+						<string key="NSFrame">{{229, 95}, {60, 60}}</string>
 						<reference key="NSSuperview" ref="353605238"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="174451113"/>
@@ -215,7 +215,7 @@
 					<object class="IBUILabel" id="430680236">
 						<reference key="NSNextResponder" ref="353605238"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{220, 88}, {80, 21}}</string>
+						<string key="NSFrame">{{220, 163}, {80, 21}}</string>
 						<reference key="NSSuperview" ref="353605238"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="942496663"/>
@@ -232,26 +232,13 @@
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">1</int>
 					</object>
-					<object class="IBUIImageView" id="92493364">
-						<reference key="NSNextResponder" ref="353605238"/>
-						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{257, 326}, {57, 57}}</string>
-						<reference key="NSSuperview" ref="353605238"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="798903450"/>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">icon.png</string>
-						</object>
-					</object>
 					<object class="IBUIToolbar" id="798903450">
 						<reference key="NSNextResponder" ref="353605238"/>
 						<int key="NSvFlags">266</int>
 						<string key="NSFrame">{{0, 392}, {320, 44}}</string>
 						<reference key="NSSuperview" ref="353605238"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -273,6 +260,19 @@
 								<reference key="IBUIToolbar" ref="798903450"/>
 								<int key="IBUISystemItemIdentifier">5</int>
 							</object>
+						</object>
+					</object>
+					<object class="IBUIImageView" id="744575341">
+						<reference key="NSNextResponder" ref="353605238"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{99, 0}, {221, 87}}</string>
+						<reference key="NSSuperview" ref="353605238"/>
+						<reference key="NSWindow"/>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<object class="NSCustomResource" key="IBUIImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">FH-Logo.png</string>
 						</object>
 					</object>
 				</object>
@@ -380,7 +380,7 @@
 							<reference ref="795301596"/>
 							<reference ref="407194795"/>
 							<reference ref="942496663"/>
-							<reference ref="92493364"/>
+							<reference ref="744575341"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -412,11 +412,6 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">19</int>
 						<reference key="object" ref="430680236"/>
-						<reference key="parent" ref="353605238"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">20</int>
-						<reference key="object" ref="92493364"/>
 						<reference key="parent" ref="353605238"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -455,6 +450,11 @@
 						<reference key="object" ref="726809845"/>
 						<reference key="parent" ref="798903450"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">35</int>
+						<reference key="object" ref="744575341"/>
+						<reference key="parent" ref="353605238"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -467,13 +467,13 @@
 					<string>17.IBPluginDependency</string>
 					<string>18.IBPluginDependency</string>
 					<string>19.IBPluginDependency</string>
-					<string>20.IBPluginDependency</string>
 					<string>25.IBPluginDependency</string>
 					<string>26.IBPluginDependency</string>
 					<string>28.IBPluginDependency</string>
 					<string>29.IBPluginDependency</string>
 					<string>30.IBPluginDependency</string>
 					<string>31.IBPluginDependency</string>
+					<string>35.IBPluginDependency</string>
 					<string>6.IBPluginDependency</string>
 					<string>8.IBPluginDependency</string>
 					<string>9.IBPluginDependency</string>
@@ -510,7 +510,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">34</int>
+			<int key="maxID">35</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -594,14 +594,14 @@
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<object class="NSArray" key="dict.sortedKeys">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>icon.png</string>
+				<string>FH-Logo.png</string>
 				<string>onebit_03.png</string>
 				<string>onebit_15.png</string>
 				<string>onebit_21.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>{57, 57}</string>
+				<string>{478, 198}</string>
 				<string>{48, 48}</string>
 				<string>{48, 48}</string>
 				<string>{48, 48}</string>
