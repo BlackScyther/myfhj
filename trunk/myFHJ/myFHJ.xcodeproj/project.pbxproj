@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE08A5D613BF0DB900493689 /* Info.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE08A5D513BF0DB900493689 /* Info.txt */; };
+		CE08A5D813BF1D2900493689 /* FH-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE08A5D713BF1D2900493689 /* FH-Logo.png */; };
 		CE0EE22F13AC848E00B085D4 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE0EE22E13AC848E00B085D4 /* Entitlements.plist */; };
 		CE0EE23113AC955500B085D4 /* Entitlements-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE0EE23013AC955500B085D4 /* Entitlements-Debug.plist */; };
 		CE1F648B13BE166C00ECA3E5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE1F648213BE166C00ECA3E5 /* Localizable.strings */; };
@@ -15,8 +17,6 @@
 		CE1F648E13BE166C00ECA3E5 /* onebit_03.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1F648813BE166C00ECA3E5 /* onebit_03.png */; };
 		CE1F648F13BE166C00ECA3E5 /* onebit_15.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1F648913BE166C00ECA3E5 /* onebit_15.png */; };
 		CE1F649013BE166C00ECA3E5 /* onebit_21.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1F648A13BE166C00ECA3E5 /* onebit_21.png */; };
-		CE29BB1313B90A9F00F52365 /* TestSettingscontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29BB1113B90A6B00F52365 /* TestSettingscontroller.m */; };
-		CE29BB1413B90ABB00F52365 /* TestSettingscontroller.h in Resources */ = {isa = PBXBuildFile; fileRef = CE29BB1013B90A6B00F52365 /* TestSettingscontroller.h */; };
 		CE5D88AD13B737A200151685 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5D88AE13B737A200151685 /* main.m */; };
 		CE5D88B013B738C300151685 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5D88B113B738C300151685 /* SettingsController.m */; };
 		CE914BF213B232F20034AA21 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE914BF013B232F20034AA21 /* InfoViewController.m */; };
@@ -49,6 +49,8 @@
 		CEB74B1A1391654E000CF223 /* FHJWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB74B191391654E000CF223 /* FHJWindow.xib */; };
 		CEB74B3D1392D1DD000CF223 /* FeedTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB74B3A1392D1DD000CF223 /* FeedTableController.m */; };
 		CEB74B3E1392D1DD000CF223 /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB74B3B1392D1DD000CF223 /* FeedView.xib */; };
+		CEDFDAD513BE3E040004A96C /* TestSettingscontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDFDAD413BE3E040004A96C /* TestSettingscontroller.m */; };
+		CEDFDAD713BE44C50004A96C /* Programmes.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEDFDAD613BE44C50004A96C /* Programmes.plist */; };
 		CEE527471399060D00B5765A /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE527451399060D00B5765A /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE08A5D513BF0DB900493689 /* Info.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Info.txt; sourceTree = "<group>"; };
+		CE08A5D713BF1D2900493689 /* FH-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FH-Logo.png"; sourceTree = "<group>"; };
 		CE0EE22E13AC848E00B085D4 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		CE0EE23013AC955500B085D4 /* Entitlements-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Entitlements-Debug.plist"; sourceTree = "<group>"; };
 		CE1F648313BE166C00ECA3E5 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -72,8 +76,6 @@
 		CE1F648813BE166C00ECA3E5 /* onebit_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onebit_03.png; sourceTree = "<group>"; };
 		CE1F648913BE166C00ECA3E5 /* onebit_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onebit_15.png; sourceTree = "<group>"; };
 		CE1F648A13BE166C00ECA3E5 /* onebit_21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onebit_21.png; sourceTree = "<group>"; };
-		CE29BB1013B90A6B00F52365 /* TestSettingscontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestSettingscontroller.h; path = Seetings/TestSettingscontroller.h; sourceTree = "<group>"; };
-		CE29BB1113B90A6B00F52365 /* TestSettingscontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestSettingscontroller.m; path = Seetings/TestSettingscontroller.m; sourceTree = "<group>"; };
 		CE5D88AE13B737A200151685 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE5D88B113B738C300151685 /* SettingsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SettingsController.m; path = UI/Settings/SettingsController.m; sourceTree = "<group>"; };
 		CE914BEF13B232F20034AA21 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoViewController.h; path = UI/Info/InfoViewController.h; sourceTree = "<group>"; };
@@ -128,6 +130,9 @@
 		CEB74B391392D1DD000CF223 /* FeedTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedTableController.h; path = UI/Feedreader/FeedTableController.h; sourceTree = "<group>"; };
 		CEB74B3A1392D1DD000CF223 /* FeedTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedTableController.m; path = UI/Feedreader/FeedTableController.m; sourceTree = "<group>"; };
 		CEB74B3B1392D1DD000CF223 /* FeedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedView.xib; path = UI/Feedreader/FeedView.xib; sourceTree = "<group>"; };
+		CEDFDAD313BE3E040004A96C /* TestSettingscontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSettingscontroller.h; sourceTree = "<group>"; };
+		CEDFDAD413BE3E040004A96C /* TestSettingscontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSettingscontroller.m; sourceTree = "<group>"; };
+		CEDFDAD613BE44C50004A96C /* Programmes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Programmes.plist; sourceTree = "<group>"; };
 		CEE527441399060D00B5765A /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = UI/Web/WebViewController.h; sourceTree = "<group>"; };
 		CEE527451399060D00B5765A /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = UI/Web/WebViewController.m; sourceTree = "<group>"; };
 		CEE5279C1399193D00B5765A /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsController.h; path = UI/Settings/SettingsController.h; sourceTree = "<group>"; };
@@ -162,6 +167,8 @@
 			children = (
 				CE1F648213BE166C00ECA3E5 /* Localizable.strings */,
 				CE1F648513BE166C00ECA3E5 /* img */,
+				CEDFDAD613BE44C50004A96C /* Programmes.plist */,
+				CE08A5D513BF0DB900493689 /* Info.txt */,
 			);
 			path = Ressources;
 			sourceTree = "<group>";
@@ -169,6 +176,7 @@
 		CE1F648513BE166C00ECA3E5 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				CE08A5D713BF1D2900493689 /* FH-Logo.png */,
 				CE1F648613BE166C00ECA3E5 /* Default.png */,
 				CE1F648713BE166C00ECA3E5 /* icon.png */,
 				CE1F648813BE166C00ECA3E5 /* onebit_03.png */,
@@ -176,15 +184,6 @@
 				CE1F648A13BE166C00ECA3E5 /* onebit_21.png */,
 			);
 			path = img;
-			sourceTree = "<group>";
-		};
-		CE29BB0E13B90A0F00F52365 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				CE29BB1013B90A6B00F52365 /* TestSettingscontroller.h */,
-				CE29BB1113B90A6B00F52365 /* TestSettingscontroller.m */,
-			);
-			name = Settings;
 			sourceTree = "<group>";
 		};
 		CE914BEE13B2328E0034AA21 /* Info */ = {
@@ -252,7 +251,7 @@
 		CE962B12138ED3C9000A83ED /* myFHJTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE29BB0E13B90A0F00F52365 /* Settings */,
+				CEDFDAD213BE3E040004A96C /* Settings */,
 				CE962B13138ED3C9000A83ED /* Supporting Files */,
 			);
 			path = myFHJTests;
@@ -411,6 +410,15 @@
 			name = Feedreader;
 			sourceTree = "<group>";
 		};
+		CEDFDAD213BE3E040004A96C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CEDFDAD313BE3E040004A96C /* TestSettingscontroller.h */,
+				CEDFDAD413BE3E040004A96C /* TestSettingscontroller.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		CEE527421398FFA300B5765A /* Web */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,6 +521,9 @@
 				CE1F648E13BE166C00ECA3E5 /* onebit_03.png in Resources */,
 				CE1F648F13BE166C00ECA3E5 /* onebit_15.png in Resources */,
 				CE1F649013BE166C00ECA3E5 /* onebit_21.png in Resources */,
+				CEDFDAD713BE44C50004A96C /* Programmes.plist in Resources */,
+				CE08A5D613BF0DB900493689 /* Info.txt in Resources */,
+				CE08A5D813BF1D2900493689 /* FH-Logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,7 +531,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE29BB1413B90ABB00F52365 /* TestSettingscontroller.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,7 +585,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE29BB1313B90A9F00F52365 /* TestSettingscontroller.m in Sources */,
+				CEDFDAD513BE3E040004A96C /* TestSettingscontroller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,7 +617,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.1.0;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -620,6 +630,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-lxml2";
 				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -628,7 +639,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.1.0;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -639,6 +650,7 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-lxml2";
 				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -647,6 +659,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.1.0;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "myFHJ/myFHJ-Prefix.pch";
@@ -669,6 +682,7 @@
 				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = Entitlements.plist;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: FH JOANNEUM GmbH";
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1.1.0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "myFHJ/myFHJ-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
@@ -690,6 +704,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/myFHJ.app/myFHJ";
+				CURRENT_PROJECT_VERSION = 1.1.0;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
@@ -712,6 +727,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/myFHJ.app/myFHJ";
+				CURRENT_PROJECT_VERSION = 1.1.0;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
