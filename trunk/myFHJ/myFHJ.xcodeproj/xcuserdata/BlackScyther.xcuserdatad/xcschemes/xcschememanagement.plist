@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>myFHJ-Tests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>myFHJ.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>CE8BDEC413D1F47800758430</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>CE962AE7138ED3C9000A83ED</key>
 		<dict>
 			<key>primary</key>
