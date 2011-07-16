@@ -25,9 +25,6 @@
 		CE962AEF138ED3C9000A83ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE962AEE138ED3C9000A83ED /* Foundation.framework */; };
 		CE962AF1138ED3C9000A83ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE962AF0138ED3C9000A83ED /* CoreGraphics.framework */; };
 		CE962AFD138ED3C9000A83ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE962AFC138ED3C9000A83ED /* AppDelegate.m */; };
-		CE962B0D138ED3C9000A83ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE962AEC138ED3C9000A83ED /* UIKit.framework */; };
-		CE962B0E138ED3C9000A83ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE962AEE138ED3C9000A83ED /* Foundation.framework */; };
-		CE962B0F138ED3C9000A83ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE962AF0138ED3C9000A83ED /* CoreGraphics.framework */; };
 		CE962B44138ED6F8000A83ED /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE962B29138ED6F8000A83ED /* CXMLDocument_CreationExtensions.m */; };
 		CE962B45138ED6F8000A83ED /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE962B2B138ED6F8000A83ED /* CXMLNode_CreationExtensions.m */; };
 		CE962B46138ED6F8000A83ED /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = CE962B2D138ED6F8000A83ED /* CXHTMLDocument.m */; };
@@ -49,20 +46,9 @@
 		CEB74B1A1391654E000CF223 /* FHJWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB74B191391654E000CF223 /* FHJWindow.xib */; };
 		CEB74B3D1392D1DD000CF223 /* FeedTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB74B3A1392D1DD000CF223 /* FeedTableController.m */; };
 		CEB74B3E1392D1DD000CF223 /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB74B3B1392D1DD000CF223 /* FeedView.xib */; };
-		CEDFDAD513BE3E040004A96C /* TestSettingscontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDFDAD413BE3E040004A96C /* TestSettingscontroller.m */; };
 		CEDFDAD713BE44C50004A96C /* Programmes.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEDFDAD613BE44C50004A96C /* Programmes.plist */; };
 		CEE527471399060D00B5765A /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE527451399060D00B5765A /* WebViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CE962B10138ED3C9000A83ED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE962ADF138ED3C8000A83ED /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CE962AE7138ED3C9000A83ED;
-			remoteInfo = myFHJ;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CE08A5D513BF0DB900493689 /* Info.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Info.txt; sourceTree = "<group>"; };
@@ -89,9 +75,6 @@
 		CE962AF8138ED3C9000A83ED /* myFHJ-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "myFHJ-Prefix.pch"; sourceTree = "<group>"; };
 		CE962AFB138ED3C9000A83ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE962AFC138ED3C9000A83ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CE962B0C138ED3C9000A83ED /* myFHJTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myFHJTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE962B14138ED3C9000A83ED /* myFHJTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "myFHJTests-Info.plist"; sourceTree = "<group>"; };
-		CE962B18138ED3C9000A83ED /* myFHJTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "myFHJTests-Prefix.pch"; sourceTree = "<group>"; };
 		CE962B28138ED6F8000A83ED /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
 		CE962B29138ED6F8000A83ED /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
 		CE962B2A138ED6F8000A83ED /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
@@ -130,8 +113,6 @@
 		CEB74B391392D1DD000CF223 /* FeedTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedTableController.h; path = UI/Feedreader/FeedTableController.h; sourceTree = "<group>"; };
 		CEB74B3A1392D1DD000CF223 /* FeedTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedTableController.m; path = UI/Feedreader/FeedTableController.m; sourceTree = "<group>"; };
 		CEB74B3B1392D1DD000CF223 /* FeedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedView.xib; path = UI/Feedreader/FeedView.xib; sourceTree = "<group>"; };
-		CEDFDAD313BE3E040004A96C /* TestSettingscontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSettingscontroller.h; sourceTree = "<group>"; };
-		CEDFDAD413BE3E040004A96C /* TestSettingscontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSettingscontroller.m; sourceTree = "<group>"; };
 		CEDFDAD613BE44C50004A96C /* Programmes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Programmes.plist; sourceTree = "<group>"; };
 		CEE527441399060D00B5765A /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = UI/Web/WebViewController.h; sourceTree = "<group>"; };
 		CEE527451399060D00B5765A /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = UI/Web/WebViewController.m; sourceTree = "<group>"; };
@@ -146,16 +127,6 @@
 				CE962AED138ED3C9000A83ED /* UIKit.framework in Frameworks */,
 				CE962AEF138ED3C9000A83ED /* Foundation.framework in Frameworks */,
 				CE962AF1138ED3C9000A83ED /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE962B08138ED3C9000A83ED /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE962B0D138ED3C9000A83ED /* UIKit.framework in Frameworks */,
-				CE962B0E138ED3C9000A83ED /* Foundation.framework in Frameworks */,
-				CE962B0F138ED3C9000A83ED /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +173,6 @@
 				CE1F648113BE166C00ECA3E5 /* Ressources */,
 				CE962B25138ED3D8000A83ED /* ThirdParty */,
 				CE962AF2138ED3C9000A83ED /* myFHJ */,
-				CE962B12138ED3C9000A83ED /* myFHJTests */,
 				CE962AEB138ED3C9000A83ED /* Frameworks */,
 				CE962AE9138ED3C9000A83ED /* Products */,
 			);
@@ -212,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				CE962AE8138ED3C9000A83ED /* myFHJ.app */,
-				CE962B0C138ED3C9000A83ED /* myFHJTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -244,24 +213,6 @@
 				CE5D88AE13B737A200151685 /* main.m */,
 				CE0EE22E13AC848E00B085D4 /* Entitlements.plist */,
 				CE0EE23013AC955500B085D4 /* Entitlements-Debug.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CE962B12138ED3C9000A83ED /* myFHJTests */ = {
-			isa = PBXGroup;
-			children = (
-				CEDFDAD213BE3E040004A96C /* Settings */,
-				CE962B13138ED3C9000A83ED /* Supporting Files */,
-			);
-			path = myFHJTests;
-			sourceTree = "<group>";
-		};
-		CE962B13138ED3C9000A83ED /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CE962B14138ED3C9000A83ED /* myFHJTests-Info.plist */,
-				CE962B18138ED3C9000A83ED /* myFHJTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -410,15 +361,6 @@
 			name = Feedreader;
 			sourceTree = "<group>";
 		};
-		CEDFDAD213BE3E040004A96C /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				CEDFDAD313BE3E040004A96C /* TestSettingscontroller.h */,
-				CEDFDAD413BE3E040004A96C /* TestSettingscontroller.m */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
 		CEE527421398FFA300B5765A /* Web */ = {
 			isa = PBXGroup;
 			children = (
@@ -459,25 +401,6 @@
 			productReference = CE962AE8138ED3C9000A83ED /* myFHJ.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CE962B0B138ED3C9000A83ED /* myFHJTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE962B22138ED3C9000A83ED /* Build configuration list for PBXNativeTarget "myFHJTests" */;
-			buildPhases = (
-				CE962B07138ED3C9000A83ED /* Sources */,
-				CE962B08138ED3C9000A83ED /* Frameworks */,
-				CE962B09138ED3C9000A83ED /* Resources */,
-				CE962B0A138ED3C9000A83ED /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE962B11138ED3C9000A83ED /* PBXTargetDependency */,
-			);
-			name = myFHJTests;
-			productName = myFHJTests;
-			productReference = CE962B0C138ED3C9000A83ED /* myFHJTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -497,7 +420,6 @@
 			projectRoot = "";
 			targets = (
 				CE962AE7138ED3C9000A83ED /* myFHJ */,
-				CE962B0B138ED3C9000A83ED /* myFHJTests */,
 			);
 		};
 /* End PBXProject section */
@@ -527,30 +449,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE962B09138ED3C9000A83ED /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		CE962B0A138ED3C9000A83ED /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE962AE4138ED3C9000A83ED /* Sources */ = {
@@ -581,23 +480,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE962B07138ED3C9000A83ED /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CEDFDAD513BE3E040004A96C /* TestSettingscontroller.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CE962B11138ED3C9000A83ED /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CE962AE7138ED3C9000A83ED /* myFHJ */;
-			targetProxy = CE962B10138ED3C9000A83ED /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CE1F648213BE166C00ECA3E5 /* Localizable.strings */ = {
@@ -700,52 +583,6 @@
 			};
 			name = Release;
 		};
-		CE962B23138ED3C9000A83ED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/myFHJ.app/myFHJ";
-				CURRENT_PROJECT_VERSION = 1.1.0;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "myFHJTests/myFHJTests-Prefix.pch";
-				INFOPLIST_FILE = "myFHJTests/myFHJTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-framework",
-					SenTestingKit,
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		CE962B24138ED3C9000A83ED /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/myFHJ.app/myFHJ";
-				CURRENT_PROJECT_VERSION = 1.1.0;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "myFHJTests/myFHJTests-Prefix.pch";
-				INFOPLIST_FILE = "myFHJTests/myFHJTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-framework",
-					SenTestingKit,
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -763,15 +600,6 @@
 			buildConfigurations = (
 				CE962B20138ED3C9000A83ED /* Debug */,
 				CE962B21138ED3C9000A83ED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		CE962B22138ED3C9000A83ED /* Build configuration list for PBXNativeTarget "myFHJTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE962B23138ED3C9000A83ED /* Debug */,
-				CE962B24138ED3C9000A83ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

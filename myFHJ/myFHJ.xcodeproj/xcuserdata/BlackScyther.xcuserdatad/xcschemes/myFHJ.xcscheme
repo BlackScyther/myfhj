@@ -31,9 +31,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE962B0B138ED3C9000A83ED"
-               BuildableName = "myFHJTests.octest"
-               BlueprintName = "myFHJTests"
+               BlueprintIdentifier = "CE8BDEC413D1F47800758430"
+               BuildableName = "myFHJ-Tests.octest"
+               BlueprintName = "myFHJ-Tests"
                ReferencedContainer = "container:myFHJ.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -46,7 +46,7 @@
       displayScale = "1.00"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release">
+      buildConfiguration = "Debug">
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
@@ -65,7 +65,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release">
+      buildConfiguration = "Debug">
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
