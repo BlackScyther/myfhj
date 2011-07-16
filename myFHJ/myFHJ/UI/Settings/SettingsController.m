@@ -32,24 +32,24 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 140;
 	
 	[scrollView setContentSize:CGSizeMake(320.0f,750.0f)];
     
-    lblData.text = NSLocalizedString(@"settings.personalData", @"data");
-    lblFirstName.text = NSLocalizedString(@"settings.firstname", @"First Name");
-    lblLastName.text = NSLocalizedString(@"settings.lastname", @"Last Name");
-    lblProgramme.text = NSLocalizedString(@"settings.programme", @"Programme");
+//    lblData.text = NSLocalizedString(@"settings.personalData", @"data");
+//    lblFirstName.text = NSLocalizedString(@"settings.firstname", @"First Name");
+//    lblLastName.text = NSLocalizedString(@"settings.lastname", @"Last Name");
+//    lblProgramme.text = NSLocalizedString(@"settings.programme", @"Programme");
     
-    NSString *firstname = [[NSUserDefaults standardUserDefaults] stringForKey:@"userFirstname"];
-    if (firstname == nil) {
-        firstname = @"";
-    }
-    txtFirstName.text = firstname;
-    txtFirstName.tag = 1;
-    
-    NSString *lastname = [[NSUserDefaults standardUserDefaults] stringForKey:@"userLastname"];
-    if (lastname == nil) {
-        lastname = @"";
-    }
-    txtLastName.text = lastname;
-    txtLastName.tag = 2;
+//    NSString *firstname = [[NSUserDefaults standardUserDefaults] stringForKey:@"userFirstname"];
+//    if (firstname == nil) {
+//        firstname = @"";
+//    }
+//    txtFirstName.text = firstname;
+//    txtFirstName.tag = 1;
+//    
+//    NSString *lastname = [[NSUserDefaults standardUserDefaults] stringForKey:@"userLastname"];
+//    if (lastname == nil) {
+//        lastname = @"";
+//    }
+//    txtLastName.text = lastname;
+//    txtLastName.tag = 2;
     
     NSString *location = [[NSUserDefaults standardUserDefaults] stringForKey:@"userLocation"];
     if (location == nil) {
@@ -138,12 +138,30 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 140;
     [UIView commitAnimations];
 }
 
-- (IBAction) save:(id)sender {
-
+- (IBAction) showLocationInfo:(id)sender 
+{
+    [self showInfo:NSLocalizedString(@"settings.location.info", @"Location Info")];
 }
 
-- (IBAction) back:(id)sender {
-	[self.navigationController popViewControllerAnimated:true];
+- (IBAction) showCodeInfo:(id)sender 
+{
+    [self showInfo:NSLocalizedString(@"settings.programmeCode.info", @"Code Info")];
+}
+
+- (IBAction) showYearInfo:(id)sender 
+{
+    [self showInfo:NSLocalizedString(@"settings.year.info", @"Year Info")];
+}
+
+- (void) showInfo:(NSString*)message 
+{    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"settings.info", @"Information") 
+                                                    message:message
+                                                   delegate:nil
+                                          cancelButtonTitle:NSLocalizedString(@"ui.ok", @"OK") 
+                                          otherButtonTitles:nil];
+    [alert show];
+    [alert release];
 }
 
 - (IBAction) setLocation:(id)sender 
@@ -171,7 +189,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 140;
 {
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:title 
                                                              delegate:self 
-                                                    cancelButtonTitle:@"Abbrechen" 
+                                                    cancelButtonTitle:NSLocalizedString(@"ui.cancel", @"Cancel")
                                                destructiveButtonTitle:nil 
                                                     otherButtonTitles:nil];
     for (NSString *button in content) {
@@ -187,7 +205,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 140;
 
     NSString *buttonTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
     
-    if (![buttonTitle isEqualToString:@"Abbrechen"]) 
+    if (![buttonTitle isEqualToString:NSLocalizedString(@"ui.cancel", @"Cancel")]) 
     {
         NSUserDefaults *defaults =[NSUserDefaults standardUserDefaults];
 
@@ -220,35 +238,35 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 140;
 //	[self moveUp:textField];    
 //}
 //
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-	
-    [self saveText:textField];
-
-	//[self moveDown:textField];
-}
-
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    //	AppDelegate *myAppDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-
-    [self saveText:textField];
-    
-	[textField resignFirstResponder];
-	return true;
-}
-
-- (void)saveText:(UITextField*)textField 
-{
-    NSUserDefaults *defaults =[NSUserDefaults standardUserDefaults];
-    
-    NSString *text = textField.text;
-    
-    if (textField.tag == 1) {
-        [defaults setObject:text forKey:@"userFirstname"];
-    } 
-    else if (textField.tag == 2) {
-        [defaults setObject:text forKey:@"userLastname"];
-    }
-}
+//- (void)textFieldDidEndEditing:(UITextField *)textField {
+//	
+//    [self saveText:textField];
+//
+//	//[self moveDown:textField];
+//}
+//
+//- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+//    //	AppDelegate *myAppDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+//
+//    [self saveText:textField];
+//    
+//	[textField resignFirstResponder];
+//	return true;
+//}
+//
+//- (void)saveText:(UITextField*)textField 
+//{
+//    NSUserDefaults *defaults =[NSUserDefaults standardUserDefaults];
+//    
+//    NSString *text = textField.text;
+//    
+//    if (textField.tag == 1) {
+//        [defaults setObject:text forKey:@"userFirstname"];
+//    } 
+//    else if (textField.tag == 2) {
+//        [defaults setObject:text forKey:@"userLastname"];
+//    }
+//}
 
 #pragma mark mm
 

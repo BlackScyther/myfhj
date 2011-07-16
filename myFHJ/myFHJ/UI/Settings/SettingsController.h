@@ -12,17 +12,13 @@
 @interface SettingsController : UIViewController <UIActionSheetDelegate, UITextFieldDelegate> {
     
     IBOutlet UIScrollView *scrollView;
-	IBOutlet UINavigationItem *navitem;
-	
-	IBOutlet UIBarButtonItem *btnSubmit;
-	IBOutlet UIBarButtonItem *btnBack;
     
-	IBOutlet UITextField *txtLastName;
-	IBOutlet UITextField *txtFirstName;
-	
-    IBOutlet UILabel *lblData;
-	IBOutlet UILabel *lblLastName;
-	IBOutlet UILabel *lblFirstName;
+//	IBOutlet UITextField *txtLastName;
+//	IBOutlet UITextField *txtFirstName;
+//	
+//    IBOutlet UILabel *lblData;
+//	IBOutlet UILabel *lblLastName;
+//	IBOutlet UILabel *lblFirstName;
 	IBOutlet UILabel *lblProgramme;
     
     IBOutlet UIButton *btnLocation;
@@ -35,11 +31,14 @@
 }
 
 
-- (void) moveUp:(UIView*)controll; 
-- (void) moveDown:(UIView*)controll; 
-- (IBAction) back:(id)sender;
-- (IBAction) save:(id)sender;
-- (void)saveText:(UITextField*)textField;
+//- (void) moveUp:(UIView*)controll; 
+//- (void) moveDown:(UIView*)controll; 
+//- (void)saveText:(UITextField*)textField;
+
+- (IBAction) showLocationInfo:(id)sender;
+- (IBAction) showCodeInfo:(id)sender;
+- (IBAction) showYearInfo:(id)sender;
+- (void) showInfo:(NSString*)message; 
 
 - (IBAction) setLocation:(id)sender; 
 - (IBAction) setProgrammeCode:(id)sender; 
