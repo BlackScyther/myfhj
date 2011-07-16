@@ -16,11 +16,9 @@
 #import "SettingsController.h"
 
 
-@interface TestSettingscontroller : SenTestCase {
-
+@interface TestSettingscontroller : SenTestCase 
+{
     SettingsController *settingsController;
-    NSString *firstName;
-    NSString *lastName;
 }
 
 
