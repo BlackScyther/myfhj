@@ -19,6 +19,20 @@
     [super viewDidLoad];
     
     self.title = NSLocalizedString(@"launcher.title", @"title");
+    
+    BOOL isFistLaunch = ![[NSUserDefaults standardUserDefaults] boolForKey:@"disclaimerAccepted"];
+    if (isFistLaunch) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Disclaimer" 
+                                                        message:NSLocalizedString(@"app.disclaimer", @"Disclaimer")
+                                                       delegate:nil 
+                                              cancelButtonTitle:@"Akzeptieren" 
+                                              otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+        
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"disclaimerAccepted"];
+        
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated
