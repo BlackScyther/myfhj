@@ -14,11 +14,11 @@
 		CE1F648B13BE166C00ECA3E5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE1F648213BE166C00ECA3E5 /* Localizable.strings */; };
 		CE1F648C13BE166C00ECA3E5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1F648613BE166C00ECA3E5 /* Default.png */; };
 		CE1F648D13BE166C00ECA3E5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1F648713BE166C00ECA3E5 /* icon.png */; };
-		CE1F648E13BE166C00ECA3E5 /* onebit_03.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1F648813BE166C00ECA3E5 /* onebit_03.png */; };
-		CE1F648F13BE166C00ECA3E5 /* onebit_15.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1F648913BE166C00ECA3E5 /* onebit_15.png */; };
-		CE1F649013BE166C00ECA3E5 /* onebit_21.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1F648A13BE166C00ECA3E5 /* onebit_21.png */; };
 		CE5D88AD13B737A200151685 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5D88AE13B737A200151685 /* main.m */; };
 		CE5D88B013B738C300151685 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5D88B113B738C300151685 /* SettingsController.m */; };
+		CE8BDEA613D0CCE300758430 /* feed.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8BDEA313D0CCE300758430 /* feed.png */; };
+		CE8BDEA713D0CCE300758430 /* full-time.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8BDEA413D0CCE300758430 /* full-time.png */; };
+		CE8BDEA813D0CCE300758430 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8BDEA513D0CCE300758430 /* settings.png */; };
 		CE914BF213B232F20034AA21 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE914BF013B232F20034AA21 /* InfoViewController.m */; };
 		CE914BF513B2337C0034AA21 /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE914BF413B2337C0034AA21 /* InfoView.xib */; };
 		CE962AED138ED3C9000A83ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE962AEC138ED3C9000A83ED /* UIKit.framework */; };
@@ -73,11 +73,11 @@
 		CE1F648413BE166C00ECA3E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CE1F648613BE166C00ECA3E5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CE1F648713BE166C00ECA3E5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		CE1F648813BE166C00ECA3E5 /* onebit_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onebit_03.png; sourceTree = "<group>"; };
-		CE1F648913BE166C00ECA3E5 /* onebit_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onebit_15.png; sourceTree = "<group>"; };
-		CE1F648A13BE166C00ECA3E5 /* onebit_21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onebit_21.png; sourceTree = "<group>"; };
 		CE5D88AE13B737A200151685 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE5D88B113B738C300151685 /* SettingsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SettingsController.m; path = UI/Settings/SettingsController.m; sourceTree = "<group>"; };
+		CE8BDEA313D0CCE300758430 /* feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feed.png; sourceTree = "<group>"; };
+		CE8BDEA413D0CCE300758430 /* full-time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "full-time.png"; sourceTree = "<group>"; };
+		CE8BDEA513D0CCE300758430 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		CE914BEF13B232F20034AA21 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoViewController.h; path = UI/Info/InfoViewController.h; sourceTree = "<group>"; };
 		CE914BF013B232F20034AA21 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoViewController.m; path = UI/Info/InfoViewController.m; sourceTree = "<group>"; };
 		CE914BF413B2337C0034AA21 /* InfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InfoView.xib; path = UI/Info/InfoView.xib; sourceTree = "<group>"; };
@@ -176,12 +176,12 @@
 		CE1F648513BE166C00ECA3E5 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				CE8BDEA313D0CCE300758430 /* feed.png */,
+				CE8BDEA413D0CCE300758430 /* full-time.png */,
+				CE8BDEA513D0CCE300758430 /* settings.png */,
 				CE08A5D713BF1D2900493689 /* FH-Logo.png */,
 				CE1F648613BE166C00ECA3E5 /* Default.png */,
 				CE1F648713BE166C00ECA3E5 /* icon.png */,
-				CE1F648813BE166C00ECA3E5 /* onebit_03.png */,
-				CE1F648913BE166C00ECA3E5 /* onebit_15.png */,
-				CE1F648A13BE166C00ECA3E5 /* onebit_21.png */,
 			);
 			path = img;
 			sourceTree = "<group>";
@@ -518,12 +518,12 @@
 				CE1F648B13BE166C00ECA3E5 /* Localizable.strings in Resources */,
 				CE1F648C13BE166C00ECA3E5 /* Default.png in Resources */,
 				CE1F648D13BE166C00ECA3E5 /* icon.png in Resources */,
-				CE1F648E13BE166C00ECA3E5 /* onebit_03.png in Resources */,
-				CE1F648F13BE166C00ECA3E5 /* onebit_15.png in Resources */,
-				CE1F649013BE166C00ECA3E5 /* onebit_21.png in Resources */,
 				CEDFDAD713BE44C50004A96C /* Programmes.plist in Resources */,
 				CE08A5D613BF0DB900493689 /* Info.txt in Resources */,
 				CE08A5D813BF1D2900493689 /* FH-Logo.png in Resources */,
+				CE8BDEA613D0CCE300758430 /* feed.png in Resources */,
+				CE8BDEA713D0CCE300758430 /* full-time.png in Resources */,
+				CE8BDEA813D0CCE300758430 /* settings.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,7 +616,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Markus Scheucher  (G4JJ3N87F3)";
 				CURRENT_PROJECT_VERSION = 1.1.0;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -629,6 +629,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-lxml2";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2F908CDE-1A54-424E-8EF1-4E15F845DCC2";
 				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
