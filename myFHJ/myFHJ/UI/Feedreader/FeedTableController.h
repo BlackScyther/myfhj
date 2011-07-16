@@ -10,8 +10,8 @@
 #import "TouchXML.h"
 
 
-@interface FeedTableController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
-
+@interface FeedTableController : UIViewController <UITableViewDelegate, UITableViewDataSource> 
+{
 	// This is the outlet for the blog view, it will allow the data from the controller to be used in a view
     IBOutlet UITableView *blogTable;
 	
@@ -19,8 +19,7 @@
     NSMutableArray *newsEntries;
 	
     // loadSwirlie will display a loading overlay while the data is downloaded from the RSS feed.
-    UIActivityIndicatorView *loadSwirlie;
-	
+    UIActivityIndicatorView *loadSwirlie;	
 }
 
 -(void) grabRSSFeed:(NSString *)blogAddress;

@@ -25,22 +25,21 @@
 	return self;
 }
 
-/*
-- (void)viewDidLoad {
+- (void)viewDidLoad 
+{
     [super viewDidLoad];
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-*/
 
-/*
-- (void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated 
+{
     [super viewWillAppear:animated];
 }
-*/
 
-- (void)viewDidAppear:(BOOL)animated {
+- (void)viewDidAppear:(BOOL)animated 
+{
     [super viewDidAppear:animated];
 	
 	if([newsEntries count] == 0) {
@@ -61,27 +60,17 @@
     }
 }
 
-/*
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-}
-*/
-/*
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
-}
-*/
-
 // Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation 
+{
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 // grabRSSFeed function that takes a string (blogAddress) as a parameter and
 // fills the global blogEntries with the entries
--(void) grabRSSFeed:(NSString *)blogAddress {
-	
+-(void) grabRSSFeed:(NSString *)blogAddress 
+{	
     // Initialize the blogEntries MutableArray that we declared in the header
 	if (newsEntries != nil) {
 		[newsEntries release];
@@ -163,13 +152,15 @@
 		cell.detailTextLabel.lineBreakMode = UILineBreakModeWordWrap;
 		cell.textLabel.numberOfLines = 0;
 		cell.detailTextLabel.numberOfLines = 0;
+        cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     }
     
     // Configure the cell...
-	int blogEntryIndex = [indexPath indexAtPosition: [indexPath length] -1];
-	
-	cell.textLabel.text= [[newsEntries objectAtIndex: blogEntryIndex] objectForKey: @"title"];
-	cell.detailTextLabel.text = [[newsEntries objectAtIndex: blogEntryIndex] objectForKey: @"description"];
+	int blogEntryIndex = [indexPath indexAtPosition: [indexPath length] -1];	
+    NSDictionary *item = [newsEntries objectAtIndex: blogEntryIndex];
+	cell.textLabel.text= [item objectForKey: @"title"];
+    NSString *descripotion = [item objectForKey: @"description"];
+	cell.detailTextLabel.text = descripotion;
     
     return cell;
 }
@@ -179,14 +170,9 @@
 	
     CGFloat width = tableView.frame.size.width - 10*2;
     
-    if (cell.textLabel.font == nil | cell.textLabel.font.pointSize == 0 ) {
+    if (cell.textLabel.font == nil | cell.textLabel.font.pointSize == 0 ) 
+    {
         [cell layoutSubviews];
-        
-        // HL no good design, but works for now and should be sufficient for one month until iOS4 is available for the iPad
-		
-//        IF_PRE_IOS4(cell.textLabel.font = [UIFont systemFontOfSize:18];)        
-//        IF_PRE_IOS4(cell.detailTextLabel.font = [UIFont systemFontOfSize:14];)
-		
     }
     
     CGSize detailTextSize = [cell.detailTextLabel.text sizeWithFont:cell.detailTextLabel.font
@@ -197,69 +183,25 @@
                                       constrainedToSize:CGSizeMake(width, CGFLOAT_MAX)
                                           lineBreakMode:UILineBreakModeWordWrap];
 	
-    return 10*2 + detailTextSize.height + textSize.height;
+    return 20*2 + detailTextSize.height + textSize.height;
 	
 }
-
-//- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section 
-//{
-//    return self.title;
-//}
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 
 #pragma mark -
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here. Create and push another view controller.
-	/*
-	 <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-	 [self.navigationController pushViewController:detailViewController animated:YES];
-	 [detailViewController release];
-	 */
+
 }
 
+- (void) tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+    int blogEntryIndex = [indexPath indexAtPosition: [indexPath length] -1];	
+    NSDictionary *item = [newsEntries objectAtIndex: blogEntryIndex];
+    NSString *articleLink = [item objectForKey:@"link"];
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:articleLink]];
+}
 
 #pragma mark -
 #pragma mark Memory management
