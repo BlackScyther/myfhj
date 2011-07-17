@@ -180,7 +180,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 140;
 
 - (IBAction) setYear:(id)sender 
 {
-    NSArray *years = [NSArray arrayWithObjects:@"2008", @"2007", @"2006", @"2005", @"2004", nil];
+    NSArray *years = [NSArray arrayWithObjects:@"2010", @"2009", @"2008", @"2007", nil];
     
     [self showActionSheetWithTitle:NSLocalizedString(@"settings.year", @"Year") buttons:years sheet:3];
 }
