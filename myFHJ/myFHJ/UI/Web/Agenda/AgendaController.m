@@ -64,7 +64,7 @@
     } else {
         urlAddress = [[NSUserDefaults standardUserDefaults] stringForKey:@"defaultAgendaURL"];
     }
-    
+
     return urlAddress;
 }
 
