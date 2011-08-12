@@ -28,33 +28,17 @@ Tel.: +43 (0)316 5453 - 8880
 Fax: +43 (0)316 5453 - 8801
 
 Inhalt:
-Bettina Stadler, Kathrin Podbrecnik, Thomas Winkler (alle PR/Marketing)
+-------
+App - Markus Scheucher Markus.Scheucher.itm08@fh-joanneum.at
+myFHJ-Projekt: http://code.google.com/p/myfhj/
+
+Icon Set - "Frankfurt" http://pc.de/icons/
+
+News und Events - Bettina Stadler, Kathrin Podbrecnik, Thomas Winkler (alle PR/Marketing)
 und Studiengangs-/Abteilungs - Webredakteure
 
-Design:
-Berger Wolfgang (PR/Marketing)
+Agenda - Thomas Radeke, Informationsdesign 2008-2011
+http://almaty.fh-joanneum.at/stundenplan/
 
-Webmaster:
-Berger Wolfgang (PR/Marketing)
-Kral Klaus (ZIT)
-webmaster@fh-joanneum.at
-
-
-
-FH JOANNEUM Graz
-Alte Poststraße 149
-A-8020 Graz
-Tel.: +43 (0)316 5453 - 0
-Fax: +43 (0)316 5453 - 8801
-
-FH JOANNEUM Kapfenberg
-Werk-VI-Straße 46
-A-8605 Kapfenberg
-Tel.: +43 (0)3862 33600 - 8300
-Fax: +43 (0)3862 33600 - 8377
-
-FH JOANNEUM Bad Gleichenberg
-A-8344 Bad Gleichenberg
-Kaiser-Franz-Josef-Straße 24
-Tel.: +43 (0)316 5453 - 6700
-Fax: +43 (0)316 5453 - 6701
+Third Party:
+TouchXML - Jonathan Wight https://github.com/TouchCode/TouchXML
