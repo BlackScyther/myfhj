@@ -11,9 +11,15 @@
 		CE08A5D813BF1D2900493689 /* FH-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE08A5D713BF1D2900493689 /* FH-Logo.png */; };
 		CE0EE22F13AC848E00B085D4 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE0EE22E13AC848E00B085D4 /* Entitlements.plist */; };
 		CE0EE23113AC955500B085D4 /* Entitlements-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE0EE23013AC955500B085D4 /* Entitlements-Debug.plist */; };
+		CE18017113F65C4F00805612 /* stundenplan.ics in Resources */ = {isa = PBXBuildFile; fileRef = CE18017013F65C4F00805612 /* stundenplan.ics */; };
+		CE18017513F66E7400805612 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = CE18017413F66E7400805612 /* Event.m */; };
 		CE1F648B13BE166C00ECA3E5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE1F648213BE166C00ECA3E5 /* Localizable.strings */; };
 		CE1F648C13BE166C00ECA3E5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1F648613BE166C00ECA3E5 /* Default.png */; };
 		CE1F648D13BE166C00ECA3E5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1F648713BE166C00ECA3E5 /* icon.png */; };
+		CE21AE5D13F7B1F80079DD16 /* DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE21AE5C13F7B1F80079DD16 /* DateFormatter.m */; };
+		CE2B895C13F5078100AB879A /* AgendaTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2B895A13F5078100AB879A /* AgendaTableController.m */; };
+		CE2B895D13F5078100AB879A /* AgendaTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2B895B13F5078100AB879A /* AgendaTableView.xib */; };
+		CE2B896213F5213000AB879A /* AgendaParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2B896113F5213000AB879A /* AgendaParser.m */; };
 		CE5D88AD13B737A200151685 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5D88AE13B737A200151685 /* main.m */; };
 		CE5D88B013B738C300151685 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5D88B113B738C300151685 /* SettingsController.m */; };
 		CE8BDEA613D0CCE300758430 /* feed.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8BDEA313D0CCE300758430 /* feed.png */; };
@@ -38,8 +44,6 @@
 		CE962B4E138ED6F8000A83ED /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE962B3D138ED6F8000A83ED /* CXMLNode_PrivateExtensions.m */; };
 		CE962B4F138ED6F8000A83ED /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE962B3F138ED6F8000A83ED /* CXMLNode_XPathExtensions.m */; };
 		CE962B50138ED6F8000A83ED /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE962B42138ED6F8000A83ED /* CTidy.m */; };
-		CEB1C96D13B6596F00BEE3D7 /* AgendaController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB1C96B13B6596E00BEE3D7 /* AgendaController.m */; };
-		CEB1C97113B65B9300BEE3D7 /* AgendaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB1C97013B65B9300BEE3D7 /* AgendaView.xib */; };
 		CEB1C97B13B67BAF00BEE3D7 /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB1C97A13B67BAF00BEE3D7 /* SettingsView.xib */; };
 		CEB74B1713916539000CF223 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB74B1513916539000CF223 /* RootViewController.m */; };
 		CEB74B1813916539000CF223 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB74B1613916539000CF223 /* RootViewController.xib */; };
@@ -55,10 +59,20 @@
 		CE08A5D713BF1D2900493689 /* FH-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FH-Logo.png"; sourceTree = "<group>"; };
 		CE0EE22E13AC848E00B085D4 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		CE0EE23013AC955500B085D4 /* Entitlements-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Entitlements-Debug.plist"; sourceTree = "<group>"; };
+		CE18017013F65C4F00805612 /* stundenplan.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = stundenplan.ics; path = ../../../../../Downloads/stundenplan.ics; sourceTree = "<group>"; };
+		CE18017313F66E7400805612 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = Model/Agenda/Event.h; sourceTree = "<group>"; };
+		CE18017413F66E7400805612 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Event.m; path = Model/Agenda/Event.m; sourceTree = "<group>"; };
 		CE1F648313BE166C00ECA3E5 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CE1F648413BE166C00ECA3E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CE1F648613BE166C00ECA3E5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CE1F648713BE166C00ECA3E5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		CE21AE5B13F7B1F80079DD16 /* DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateFormatter.h; path = Helper/DateFormatter.h; sourceTree = "<group>"; };
+		CE21AE5C13F7B1F80079DD16 /* DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateFormatter.m; path = Helper/DateFormatter.m; sourceTree = "<group>"; };
+		CE2B895913F5078100AB879A /* AgendaTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AgendaTableController.h; path = UI/Agenda/AgendaTableController.h; sourceTree = "<group>"; };
+		CE2B895A13F5078100AB879A /* AgendaTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AgendaTableController.m; path = UI/Agenda/AgendaTableController.m; sourceTree = "<group>"; };
+		CE2B895B13F5078100AB879A /* AgendaTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AgendaTableView.xib; path = UI/Agenda/AgendaTableView.xib; sourceTree = "<group>"; };
+		CE2B896013F5213000AB879A /* AgendaParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AgendaParser.h; path = UI/Agenda/AgendaParser.h; sourceTree = "<group>"; };
+		CE2B896113F5213000AB879A /* AgendaParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AgendaParser.m; path = UI/Agenda/AgendaParser.m; sourceTree = "<group>"; };
 		CE5D88AE13B737A200151685 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE5D88B113B738C300151685 /* SettingsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SettingsController.m; path = UI/Settings/SettingsController.m; sourceTree = "<group>"; };
 		CE8BDEA313D0CCE300758430 /* feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feed.png; sourceTree = "<group>"; };
@@ -102,9 +116,6 @@
 		CE962B41138ED6F8000A83ED /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
 		CE962B42138ED6F8000A83ED /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
 		CE962B43138ED6F8000A83ED /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
-		CEB1C96A13B6596E00BEE3D7 /* AgendaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AgendaController.h; path = UI/Web/Agenda/AgendaController.h; sourceTree = "<group>"; };
-		CEB1C96B13B6596E00BEE3D7 /* AgendaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AgendaController.m; path = UI/Web/Agenda/AgendaController.m; sourceTree = "<group>"; };
-		CEB1C97013B65B9300BEE3D7 /* AgendaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AgendaView.xib; path = UI/Web/Agenda/AgendaView.xib; sourceTree = "<group>"; };
 		CEB1C97A13B67BAF00BEE3D7 /* SettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsView.xib; path = UI/Settings/SettingsView.xib; sourceTree = "<group>"; };
 		CEB74B1413916539000CF223 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = UI/Launcher/RootViewController.h; sourceTree = "<group>"; };
 		CEB74B1513916539000CF223 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = UI/Launcher/RootViewController.m; sourceTree = "<group>"; };
@@ -136,6 +147,7 @@
 		CE1F648113BE166C00ECA3E5 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				CE18017013F65C4F00805612 /* stundenplan.ics */,
 				CE1F648213BE166C00ECA3E5 /* Localizable.strings */,
 				CE1F648513BE166C00ECA3E5 /* img */,
 				CEDFDAD613BE44C50004A96C /* Programmes.plist */,
@@ -155,6 +167,27 @@
 				CE1F648713BE166C00ECA3E5 /* icon.png */,
 			);
 			path = img;
+			sourceTree = "<group>";
+		};
+		CE2B895313F506D000AB879A /* Agenda */ = {
+			isa = PBXGroup;
+			children = (
+				CE2B895913F5078100AB879A /* AgendaTableController.h */,
+				CE2B895A13F5078100AB879A /* AgendaTableController.m */,
+				CE2B895B13F5078100AB879A /* AgendaTableView.xib */,
+				CE2B896013F5213000AB879A /* AgendaParser.h */,
+				CE2B896113F5213000AB879A /* AgendaParser.m */,
+			);
+			name = Agenda;
+			sourceTree = "<group>";
+		};
+		CE2B895F13F5101600AB879A /* Agenda */ = {
+			isa = PBXGroup;
+			children = (
+				CE18017313F66E7400805612 /* Event.h */,
+				CE18017413F66E7400805612 /* Event.m */,
+			);
+			name = Agenda;
 			sourceTree = "<group>";
 		};
 		CE914BEE13B2328E0034AA21 /* Info */ = {
@@ -299,6 +332,7 @@
 		CE962BA2138EDA4F000A83ED /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE2B895F13F5101600AB879A /* Agenda */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -306,6 +340,7 @@
 		CE962BA3138EDA60000A83ED /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CE2B895313F506D000AB879A /* Agenda */,
 				CE914BEE13B2328E0034AA21 /* Info */,
 				CEE5279B139918F600B5765A /* Settings */,
 				CEE527421398FFA300B5765A /* Web */,
@@ -327,18 +362,10 @@
 		CEB1C96813B6573D00BEE3D7 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				CE21AE5B13F7B1F80079DD16 /* DateFormatter.h */,
+				CE21AE5C13F7B1F80079DD16 /* DateFormatter.m */,
 			);
 			name = Helper;
-			sourceTree = "<group>";
-		};
-		CEB1C96F13B6597600BEE3D7 /* Agenda */ = {
-			isa = PBXGroup;
-			children = (
-				CEB1C96A13B6596E00BEE3D7 /* AgendaController.h */,
-				CEB1C96B13B6596E00BEE3D7 /* AgendaController.m */,
-				CEB1C97013B65B9300BEE3D7 /* AgendaView.xib */,
-			);
-			name = Agenda;
 			sourceTree = "<group>";
 		};
 		CEB74B13139154E0000CF223 /* Launcher */ = {
@@ -364,7 +391,6 @@
 		CEE527421398FFA300B5765A /* Web */ = {
 			isa = PBXGroup;
 			children = (
-				CEB1C96F13B6597600BEE3D7 /* Agenda */,
 				CEE527441399060D00B5765A /* WebViewController.h */,
 				CEE527451399060D00B5765A /* WebViewController.m */,
 			);
@@ -435,7 +461,6 @@
 				CE0EE22F13AC848E00B085D4 /* Entitlements.plist in Resources */,
 				CE0EE23113AC955500B085D4 /* Entitlements-Debug.plist in Resources */,
 				CE914BF513B2337C0034AA21 /* InfoView.xib in Resources */,
-				CEB1C97113B65B9300BEE3D7 /* AgendaView.xib in Resources */,
 				CEB1C97B13B67BAF00BEE3D7 /* SettingsView.xib in Resources */,
 				CE1F648B13BE166C00ECA3E5 /* Localizable.strings in Resources */,
 				CE1F648C13BE166C00ECA3E5 /* Default.png in Resources */,
@@ -446,6 +471,8 @@
 				CE8BDEA613D0CCE300758430 /* feed.png in Resources */,
 				CE8BDEA713D0CCE300758430 /* full-time.png in Resources */,
 				CE8BDEA813D0CCE300758430 /* settings.png in Resources */,
+				CE2B895D13F5078100AB879A /* AgendaTableView.xib in Resources */,
+				CE18017113F65C4F00805612 /* stundenplan.ics in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +503,10 @@
 				CEE527471399060D00B5765A /* WebViewController.m in Sources */,
 				CE5D88B013B738C300151685 /* SettingsController.m in Sources */,
 				CE914BF213B232F20034AA21 /* InfoViewController.m in Sources */,
-				CEB1C96D13B6596F00BEE3D7 /* AgendaController.m in Sources */,
+				CE2B895C13F5078100AB879A /* AgendaTableController.m in Sources */,
+				CE2B896213F5213000AB879A /* AgendaParser.m in Sources */,
+				CE18017513F66E7400805612 /* Event.m in Sources */,
+				CE21AE5D13F7B1F80079DD16 /* DateFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 #import "RootViewController.h"
 #import "FeedTableController.h"
-#import "AgendaController.h"
+#import "AgendaTableController.h"
 #import "SettingsController.h"
 #import "InfoViewController.h"
 
@@ -89,7 +89,7 @@
     if ([title isEqualToString:@"News"] || [title isEqualToString:@"Events"]) {
         controller = [[FeedTableController alloc] init];
     } else if ([title isEqualToString:@"Agenda"]) {
-        controller = [[AgendaController alloc] init];
+        controller = [[AgendaTableController alloc] init];
     } else if ([title isEqualToString:@"Settings"]) {
         controller = [[SettingsController alloc] init];
     } else if ([title isEqualToString:@"Info"]) {
