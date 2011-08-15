@@ -44,8 +44,8 @@
     NSString *year = [[NSUserDefaults standardUserDefaults] stringForKey:@"userYear"];
     
     NSString *calURL = [NSString stringWithFormat:@"%@?q=%%22%@+%@", ALMATY_URL_BASE, code, year];
-    NSString *calURLToday = [NSString stringWithFormat:@"%@%%22+20110506", calURL];
-    NSString *calURLTomorow = [NSString stringWithFormat:@"%@%%22+20110507", calURL];
+    NSString *calURLToday = [NSString stringWithFormat:@"%@%%22+heute", calURL];
+    NSString *calURLTomorow = [NSString stringWithFormat:@"%@%%22+morgen", calURL];
     
     _coursesToday = [[NSArray alloc] initWithArray:[parser fetchCalFromURL:calURLToday]];
     _coursesTomorow = [[NSArray alloc] initWithArray:[parser fetchCalFromURL:calURLTomorow]];

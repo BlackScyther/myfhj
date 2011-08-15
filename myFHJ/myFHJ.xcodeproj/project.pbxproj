@@ -573,7 +573,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.1.0;
+				CURRENT_PROJECT_VERSION = 1.2.0;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "myFHJ/myFHJ-Prefix.pch";
@@ -596,7 +596,7 @@
 				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = Entitlements.plist;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: FH JOANNEUM GmbH";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 1.1.0;
+				CURRENT_PROJECT_VERSION = 1.2.0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "myFHJ/myFHJ-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
