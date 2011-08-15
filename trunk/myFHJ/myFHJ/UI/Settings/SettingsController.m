@@ -51,6 +51,24 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 140;
 //    txtLastName.text = lastname;
 //    txtLastName.tag = 2;
     
+    NSString *programmesPath = [[NSBundle mainBundle] pathForResource:@"Programmes" ofType:@"plist"];
+    NSDictionary *programmes = [[NSDictionary dictionaryWithContentsOfFile:programmesPath] objectForKey:@"Root"];
+   
+    if (programmes != nil) {
+        _programmes = [[NSArray alloc] initWithArray:[programmes allKeys]];
+    }
+    
+    //NSLog(@"programmes: %d", [_programmes count]);
+ 
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+	// unregister for keyboard notifications while not visible.
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil]; 
+}
+- (void) viewWillAppear:(BOOL)animated
+{
     NSString *location = [[NSUserDefaults standardUserDefaults] stringForKey:@"userLocation"];
     if (location == nil) {
         location = NSLocalizedString(@"settings.location", @"Location");
@@ -68,12 +86,6 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 140;
         year = NSLocalizedString(@"settings.year", @"Year");
     }
     [btnYear setTitle:year forState:UIControlStateNormal];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	// unregister for keyboard notifications while not visible.
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil]; 
 }
 
 /*
@@ -173,7 +185,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 140;
 
 - (IBAction) setProgrammeCode:(id)sender 
 {
-    NSArray *codes = [NSArray arrayWithObjects:@"ASE", @"IRM", @"ITM", @"SWD", nil];
+    NSArray *codes = [NSArray arrayWithObjects:@"ASE", @"IRM", @"ITM", @"SWD", @"More ...", nil];
     
     [self showActionSheetWithTitle:NSLocalizedString(@"settings.programmeCode", @"Code") buttons:codes sheet:2];
 }
@@ -216,16 +228,91 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 140;
             
         } else if (actionSheet.tag == 2)
         {
-            [btnCode setTitle:buttonTitle forState:UIControlStateNormal];
-            [defaults setObject:buttonTitle forKey:@"userProgrammeCode"];
+            if ([buttonTitle isEqualToString:@"More ..."]) {
+               
+                if (_programmes != nil) {                    
+                    [self showPicker:self];
+                }
+            }
+            else { 
+                [btnCode setTitle:buttonTitle forState:UIControlStateNormal];
+                [defaults setObject:buttonTitle forKey:@"userProgrammeCode"];            
+            }
             
         } else if (actionSheet.tag == 3)
         {
             [btnYear setTitle:buttonTitle forState:UIControlStateNormal];
             [defaults setObject:buttonTitle forKey:@"userYear"];
             
+        } else if (actionSheet.tag == 333) {
+            if ([buttonTitle isEqualToString:@"Done"]) {
+                [btnCode setTitle:_pickerselection forState:UIControlStateNormal];
+                [defaults setObject:_pickerselection forKey:@"userProgrammeCode"];
+
+            }
         }
     }
+}
+
+- (void) showPicker:(id)sender {
+    UIActionSheet *menu = [[UIActionSheet alloc] initWithTitle:@"More"
+                                                      delegate:self
+                                             cancelButtonTitle:@"Done"
+                                        destructiveButtonTitle:@"Cancel"
+                                             otherButtonTitles:nil];
+    [menu setTag:333];
+    // Add the picker
+    UIPickerView *pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0,185,0,0)];
+    
+    pickerView.delegate = self;
+    pickerView.showsSelectionIndicator = YES;    // note this is default to NO
+    
+    [menu addSubview:pickerView];
+    [menu showInView:self.view];
+    [menu setBounds:CGRectMake(0,0,320, 700)];
+    
+    [pickerView release];
+    [menu release];
+}
+
+#pragma mark UIPickerViewDelegate
+- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
+{
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 37)];
+    if (_programmes != nil) {
+        label.text = (NSString*)[_programmes objectAtIndex:row];
+    } else {
+        label.text = @"ERROR";
+    }
+    label.textAlignment = UITextAlignmentCenter;
+    label.backgroundColor = [UIColor clearColor];
+    [label autorelease];
+    return label;
+}
+
+//- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+//    if (_programmes != nil) {
+//        return (NSString*)[_programmes objectAtIndex:row];
+//    } else {
+//        return @"ERROR";
+//    }
+//}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    if (_programmes != nil) {
+        return [_programmes count];
+    } else {
+        return 1;
+    }
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    _pickerselection = [_programmes objectAtIndex:row];
 }
 
 #pragma mark UIScrollViewDelegate
@@ -285,6 +372,12 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 140;
 
 
 - (void)dealloc {
+    if (_programmes != nil) {
+        [_programmes release];
+    }
+    if (_pickerselection != nil) {
+        [_pickerselection release];
+    }
     [super dealloc];
 }
 

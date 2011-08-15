@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface SettingsController : UIViewController <UIActionSheetDelegate, UITextFieldDelegate> {
+@interface SettingsController : UIViewController <UIActionSheetDelegate, UITextFieldDelegate, UIPickerViewDelegate> {
     
     IBOutlet UIScrollView *scrollView;
     
@@ -20,6 +20,8 @@
 //	IBOutlet UILabel *lblLastName;
 //	IBOutlet UILabel *lblFirstName;
 	IBOutlet UILabel *lblProgramme;
+    NSArray *_programmes;
+    NSString *_pickerselection;
     
     IBOutlet UIButton *btnLocation;
     IBOutlet UIButton *btnYear;
@@ -39,6 +41,8 @@
 - (IBAction) showCodeInfo:(id)sender;
 - (IBAction) showYearInfo:(id)sender;
 - (void) showInfo:(NSString*)message; 
+
+- (void) showPicker:(id)sender;
 
 - (IBAction) setLocation:(id)sender; 
 - (IBAction) setProgrammeCode:(id)sender; 
