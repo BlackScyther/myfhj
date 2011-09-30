@@ -44,7 +44,10 @@
 		CE962B4E138ED6F8000A83ED /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE962B3D138ED6F8000A83ED /* CXMLNode_PrivateExtensions.m */; };
 		CE962B4F138ED6F8000A83ED /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE962B3F138ED6F8000A83ED /* CXMLNode_XPathExtensions.m */; };
 		CE962B50138ED6F8000A83ED /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE962B42138ED6F8000A83ED /* CTidy.m */; };
+		CEACA3DD14121CAB0074A5AA /* README in Resources */ = {isa = PBXBuildFile; fileRef = CEACA3DC14121CAB0074A5AA /* README */; };
 		CEB1C97B13B67BAF00BEE3D7 /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB1C97A13B67BAF00BEE3D7 /* SettingsView.xib */; };
+		CEB1F52B13F8FAE300C014A8 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = CEB1F52A13F8FAE300C014A8 /* TODO */; };
+		CEB1F52D13F8FF0100C014A8 /* CHANGELOG in Resources */ = {isa = PBXBuildFile; fileRef = CEB1F52C13F8FF0100C014A8 /* CHANGELOG */; };
 		CEB74B1713916539000CF223 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB74B1513916539000CF223 /* RootViewController.m */; };
 		CEB74B1813916539000CF223 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB74B1613916539000CF223 /* RootViewController.xib */; };
 		CEB74B1A1391654E000CF223 /* FHJWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB74B191391654E000CF223 /* FHJWindow.xib */; };
@@ -116,7 +119,10 @@
 		CE962B41138ED6F8000A83ED /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
 		CE962B42138ED6F8000A83ED /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
 		CE962B43138ED6F8000A83ED /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
+		CEACA3DC14121CAB0074A5AA /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = DOC/README; sourceTree = "<group>"; };
 		CEB1C97A13B67BAF00BEE3D7 /* SettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsView.xib; path = UI/Settings/SettingsView.xib; sourceTree = "<group>"; };
+		CEB1F52A13F8FAE300C014A8 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TODO; path = DOC/TODO; sourceTree = "<group>"; };
+		CEB1F52C13F8FF0100C014A8 /* CHANGELOG */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CHANGELOG; path = DOC/CHANGELOG; sourceTree = "<group>"; };
 		CEB74B1413916539000CF223 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = UI/Launcher/RootViewController.h; sourceTree = "<group>"; };
 		CEB74B1513916539000CF223 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = UI/Launcher/RootViewController.m; sourceTree = "<group>"; };
 		CEB74B1613916539000CF223 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RootViewController.xib; path = UI/Launcher/RootViewController.xib; sourceTree = "<group>"; };
@@ -203,6 +209,7 @@
 		CE962ADD138ED3C8000A83ED = {
 			isa = PBXGroup;
 			children = (
+				CEB1F52813F8FA9600C014A8 /* DOC */,
 				CE1F648113BE166C00ECA3E5 /* Ressources */,
 				CE962B25138ED3D8000A83ED /* ThirdParty */,
 				CE962AF2138ED3C9000A83ED /* myFHJ */,
@@ -368,6 +375,16 @@
 			name = Helper;
 			sourceTree = "<group>";
 		};
+		CEB1F52813F8FA9600C014A8 /* DOC */ = {
+			isa = PBXGroup;
+			children = (
+				CEB1F52A13F8FAE300C014A8 /* TODO */,
+				CEB1F52C13F8FF0100C014A8 /* CHANGELOG */,
+				CEACA3DC14121CAB0074A5AA /* README */,
+			);
+			name = DOC;
+			sourceTree = "<group>";
+		};
 		CEB74B13139154E0000CF223 /* Launcher */ = {
 			isa = PBXGroup;
 			children = (
@@ -473,6 +490,9 @@
 				CE8BDEA813D0CCE300758430 /* settings.png in Resources */,
 				CE2B895D13F5078100AB879A /* AgendaTableView.xib in Resources */,
 				CE18017113F65C4F00805612 /* stundenplan.ics in Resources */,
+				CEB1F52B13F8FAE300C014A8 /* TODO in Resources */,
+				CEB1F52D13F8FF0100C014A8 /* CHANGELOG in Resources */,
+				CEACA3DD14121CAB0074A5AA /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,7 +550,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Markus Scheucher  (G4JJ3N87F3)";
-				CURRENT_PROJECT_VERSION = 1.1.0;
+				CURRENT_PROJECT_VERSION = 1.2.1;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -553,7 +573,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.1.0;
+				CURRENT_PROJECT_VERSION = 1.2.1;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -573,7 +593,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.2.0;
+				CURRENT_PROJECT_VERSION = 1.2.1;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "myFHJ/myFHJ-Prefix.pch";
@@ -585,6 +605,7 @@
 				);
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -596,7 +617,7 @@
 				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = Entitlements.plist;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: FH JOANNEUM GmbH";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 1.2.0;
+				CURRENT_PROJECT_VERSION = 1.2.1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "myFHJ/myFHJ-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
@@ -608,6 +629,7 @@
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B71CB47A-E82F-4CC6-9B37-42FACFD682BE";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
